@@ -1,0 +1,64 @@
+点点星光
+├──entry/src/main/ets                            
+│  ├──common                         
+│  │  └──constants
+│  │     ├──Constants.ets                        // 常量
+│  │     └──EditConstants.ets                    // 编辑页面用到的常量（较多所以单独列出）
+│  ├──entryability
+│  │  └──EntryAbility.ts                         // 本地启动ability           
+│  ├──pages
+│  │  ├──Index.ets                               // 首页
+│  │  ├──ListPage.ets                            // 整体列表页面（四列网格）
+│  │  ├──DetailList.ets                          // 详细列表页面（大图+底部小图列表）
+│  │  └──EditPage.ets                            // 编辑页面    
+│  ├──utils
+│  │  ├──AdjustUtil.ets                          // 图像处理工具类 
+│  │  │                                             // 提供调整图像饱和度和亮度的功能 
+│  │  │                                             // 通过对图像的每个像素应用颜色转换算法来实现
+│  │  ├──CropUtil.ets                            // 裁剪工具类 按不同比例
+│  │  ├──DrawingUtils.ets                        // Canvas画图工具类
+│  │  ├──LoggerUtil.ets                          // log工具类
+│  │  ├──MathUtils.ets                           // 坐标转换工具类
+│  │  └──OpacityUtil.ets                         // 透明度调节工具类
+│  ├──view
+│  │  ├──AdjustContentView.ets                   // 色域调整视图 定义调节按钮的状态和滑条的交互逻辑
+│  │  ├──ImageSelect.ets                         // Canvas选择框实现类
+│  │  └──PhotoItem.ets                           // 首页列表的图片集   
+│  ├──viewmodel
+│  │  ├──CropShow.ets                            // 选择框显示控制类 
+│  │  │                                             // 管理裁剪区域的显示和行为，初始化、同步限制区域、旋转和翻转等
+│  │  ├──CropType.ets                            // 图片裁剪过程中的不同状态和比例
+│  │  ├──IconListViewModel.ets                   // 图标的不同状态（正常和选中状态）
+│  │  ├──ImageEditCrop.ets                       // 图片编辑操作类
+│  │  ├──ImageFilterCrop.ets                     // 图片操作收集类
+│  │  ├──ImageSizeItem.ets                       // 图片尺寸（宽和高）
+│  │  ├──MessageItem.ets                         // 线程间传递的消息封装
+│  │  ├──OptionViewModel.ets                     // 图片处理封装类
+│  │  ├──PixelMapWrapper.ets                     // PixelMap封装类
+│  │  │                                          // 接下来是几个几何相关的封装类：
+│  │  ├──Line.ets                                // 线封装类
+│  │  ├──Point.ets                               // 点封装类
+│  │  ├──Ratio.ets                               // 比例封装类
+│  │  ├──Rect.ets                                // 矩形封装类
+│  │  ├──RegionItem.ets                          // 区域封装类
+│  │  └──ScreenManager.ts                        // 屏幕尺寸计算工具类
+│  └──workers
+│     ├──AdjustBrightnessWork.ts                 // 亮度异步调节（在后台的Worker线程上进行）
+│     └──AdjustSaturationWork.ts                 // 饱和度异步调节（在后台的Worker线程上进行）
+└──entry/src/main/resources                      // 资源文件目录             
+   ├──base                         
+   │  ├──element     
+   │  │    ├──color.json                         // 颜色
+   │  │    ├──float.json                         // 一些通用尺寸
+   │  │    └──string.json                       
+   │  ├──media                                   // 用到的图标和图片
+   │  └──profile   
+   │       └──main_pages.json                    // 页面
+   ├──en_US          
+   │  └──element    
+   │       └──string.json                        // 英文语言包
+   └──zh_CN          
+      └──element                    
+          └──string.json                         // 中文语言包
+
+          
