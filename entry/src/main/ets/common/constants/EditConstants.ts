@@ -1,0 +1,82 @@
+export class EditConstants {
+  static readonly TITLE_ROW_WEIGHT: string = '50%';
+  static readonly LAYOUT_FULL_SCREEN: string = '100%';
+  static readonly EDIT_PAGE_HEIGHT: string = '26%';
+  static readonly IMAGE_SHOW_HEIGHT: string = '68%';
+  static readonly SLIDER_WIDTH: string = '80%';
+  static readonly LOADING_WH: string = '30%';
+  static readonly CLOCK_WISE: number = 90;      // 顺时针
+  static readonly ANTI_CLOCK: number = -90;     // 逆时针
+  static readonly TAB_MENU_WIDTH: number = 18;
+  static readonly NAVIGATION_HEIGHT: number = 56;
+
+  static readonly ADJUST_SLIDER_VALUE: number[] = [100, 100, 100];
+  static readonly SLIDER_MIN: number = 1;   //滑动条最小值、最大值
+  static readonly SLIDER_MAX: number = 100;
+  static readonly SLIDER_STEP: number = 1;
+  static readonly PIXEL_STEP: number = 4;
+  static readonly DECIMAL_TWO: number = 2;
+  static readonly COLOR_LEVEL_MAX: number = 255;
+  static readonly CONVERT_INT: number = 100;
+  static readonly ANGLE_60: number = 60;
+  static readonly ANGLE_120: number = 120;
+  static readonly ANGLE_240: number = 240;
+  static readonly ANGLE_360: number = 360;
+  static readonly MOD_2: number = 2;
+  static readonly AVERAGE_WEIGHT_WIDTH: number = 2;
+  static readonly CROP_RATE_4_3: number = 0.75;
+  static readonly CROP_RATE_9_16: number = 9 / 16;
+  static readonly ENCODE_QUALITY: number = 100;
+  static readonly TITLE_SPACE: number = 0;
+  static readonly SLIDER_CLICK_MODE: number = 3;
+  static readonly ENCODE_FORMAT: string = 'image/jpeg';
+  static readonly ENCODE_FILE_PERMISSION: string = 'rw';
+  static readonly BRIGHTNESS_WORKER_FILE = 'entry/ets/workers/AdjustBrightnessWork.ts';
+  static readonly SATURATION_WORKER_FILE = 'entry/ets/workers/AdjustSaturationWork.ts';
+  static readonly IMAGE_PREFIX = 'image';
+  static readonly IMAGE_FORMAT = '.jpg';
+  static readonly RAW_FILE_NAME = 'edit.jpg';
+  static readonly RAW_FILE_NAME_TEST = 'edit_test.jpg';
+
+  static readonly DEFAULT_RATIO: number = -1;
+  static readonly RATIO_1_1: number = 1;
+  static readonly RATIO_16_9: number[] = [16, 9];
+  static readonly RATIO_9_16: number[] = [9, 16];
+  static readonly RATIO_4_3: number[] = [4, 3];
+  static readonly RATIO_3_4: number[] = [3, 4];
+  static readonly RATIO_3_2: number[] = [3, 2];
+  static readonly RATIO_2_3: number[] = [2, 3];
+
+  static readonly SCREEN_DISPLAY_MARGIN: number = 15;
+  static readonly DOUBLE: number = 2;
+  static readonly EDIT_SCREEN_USAGE: number = 0.68;
+  static readonly TITLE_HEIGHT: number = 56;
+  static readonly APP_KEY_SCREEN_MANAGER: string = 'app_key_screen_manager';
+  static readonly IS_FULL_SCREEN_KEY: string = 'isFullScreen';
+  static readonly DEFAULT_DEVICE_TYPE: string = 'phone';
+  static readonly STATUS_BAR_BACKGROUND_COLOR: string = '#F1F3F5';
+  static readonly STATUS_BAR_CONTENT_COLOR: string = '#000000';
+  static readonly TOP_BAR_SIZE: number = 56;
+  static readonly TOOL_BAR_SIZE: number = 72;
+  static readonly TIMEOUT: number = 50;
+  static readonly DEFAULT_LINE_WIDTH: number = 0.4;
+  static readonly DEFAULT_LINE_RECT_WIDTH: number = 0.8;
+  static readonly DEFAULT_BUTTON_WIDTH: number = 2.3;
+
+  static readonly DEFAULT_BUTTON_PADDING: number = 1;
+  static readonly DEFAULT_BUTTON_LENGTH: number = 20;
+  static readonly DEFAULT_LINE_COLOR: string = '#80FFFFFF';
+  static readonly DEFAULT_RECT_LINE_COLOR: string = '#FFFFFFFF';
+  static readonly DEFAULT_BUTTON_COLOR: string = 'white';
+  static readonly DEFAULT_MASK_STYLE: string = 'rgba(0, 0, 0, 0.3)';
+
+  static readonly EQUALITY_THRESHOLD = 0.0001;
+  static readonly DEFAULT_MIN_SIDE_LENGTH: number = 90;
+  static readonly DEFAULT_TOUCH_BOUND: number = 20;
+  static readonly BASE_SCALE_VALUE: number = 1.0;
+  static readonly DEFAULT_IMAGE_RATIO: number = 1.0;
+  static readonly DEFAULT_MIN_SIDE_LENGTH_EDIT: number = 32;
+  static readonly DEFAULT_MARGIN_LENGTH: number = 20;
+  static readonly DEFAULT_TIMEOUT_MILLISECOND_1000: number = 1000;
+  static readonly DEFAULT_SPLIT_FRACTION: number = 3;
+}
